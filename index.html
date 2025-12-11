@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Efootboll</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- Botão modo claro/escuro -->
+<button id="themeToggle" class="theme-btn">🌙</button>
+
+<!-- Partículas -->
+<canvas id="particles"></canvas>
+
+<!-- Banner animado -->
+<header class="banner">
+    <h1 class="title-neon">EFOOTBOLL</h1>
+    <p class="subtitle">Bugs • Informações • Atualizações</p>
+</header>
+
+<!-- Botão com efeito elétrico -->
+<div class="center">
+    <a href="https://play.google.com/store/apps/details?id=com.nova.peshub22" class="energy-btn" id="mainButton">
+        Abrir Aplicativo
+        <span class="energy-line"></span>
+    </a>
+</div>
+
+<!-- Modal de Configurações -->
+<div id="configModal" class="modal">
+  <div class="modal-content">
+    <h2>Configurações</h2>
+    <label><input type="checkbox" id="soundToggle" checked> Som nos botões</label>
+    <br><br>
+    <button onclick="closeConfig()" class="close-btn">Fechar</button>
+  </div>
+</div>
+
+<!-- Botão de Configurações -->
+<button class="config-btn" onclick="openConfig()">⚙️</button>
+
+<audio id="click-sound" src="assets/sfx/click.mp3" preload="auto"></audio>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
